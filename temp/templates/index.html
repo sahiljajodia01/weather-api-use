@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+   		Temperature
+    </title>
+</head>
+<body>
+	<h1>Enter Zipcode of any city of INDIA below.</h1>
+    <form method="post" action="/temp/">
+        {% csrf_token %}
+        <input type="text" name="zip" placeholder="Enter Zipcode Here">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
